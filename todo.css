@@ -1,0 +1,51 @@
+body{
+    height: 100%;
+    background-color:#BBDCEC
+}
+
+#todo-list{
+    text-align: center;
+    font-size: 15pt;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20pt;
+}
+
+button{
+    justify-content: center;
+    color: black;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 12px 28px;
+    text-decoration: none;
+    border: none; 
+    text-align: center;
+}
+
+.button_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2px
+    
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: black;
+    color: white;
+}
+
+label{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#dropdown{
+    width: 50px;
+    height: 25px;
+}
