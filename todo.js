@@ -4,7 +4,7 @@ let arrayOfTodos = [];
 function fetchTodos(){
     fetch('https://jsonplaceholder.typicode.com/todos')
     .then((response) => response.json())
-    .then((json) => arrayOfTodos = json)
+    .then((data) => arrayOfTodos = data)
 }
 
 function logTodos(){
@@ -16,6 +16,7 @@ function populateTodos(){
     document.getElementById("todo-list").innerHTML = ""; 
 
     for(var i = 0; i < arrayOfTodos.length; i++){
+
 
         var listMain = document.getElementById("todo-list"); 
 
@@ -52,7 +53,7 @@ function filterTodos(){
 
         var listMain = document.getElementById("todo-list");
 
-        var newItem = document.createElement("li");
+        var newItem = document.createElement("li"); 
 
         var newData = document.createTextNode(filteredArray[i].title);
 
@@ -73,6 +74,7 @@ function completeTodos(){
         var listMain = document.getElementById("todo-list");
 
         var newItem = document.createElement("li");
+        newItem.style.color = 'blue'; 
 
         var newData = document.createTextNode(filteredArray[i].title);
 
@@ -93,6 +95,7 @@ function incompleteTodos(){
         var listMain = document.getElementById("todo-list");
 
         var newItem = document.createElement("li");
+        newItem.style.color = 'red'; 
 
         var newData = document.createTextNode(filteredArray[i].title);
 
